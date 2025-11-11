@@ -2,7 +2,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Header from "./_components/Header";
 import Footer from "./_components/Footer";
-
+import AuthProvider from "./_components/AuthProvider"; // <-- 1. Import the provider
 
 export const metadata = {
   title: "Create Next App",
@@ -12,11 +12,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body
-      >
-        <Header/>
-        {children}
-        <Footer/>
+      <body>
+        <AuthProvider> {/* <-- 2. Wrap your content */}
+          <Header />
+          {children}
+          <Footer />
+        </AuthProvider> {/* <-- 3. Close the wrapper */}
       </body>
     </html>
   );

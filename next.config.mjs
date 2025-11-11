@@ -3,7 +3,7 @@ const nextConfig = {
   /* config options here */
   reactCompiler: true,
   images:{
-    domains:['www.google.com']
+    domains:['www.google.com', 'lh3.googleusercontent.com']
   }
 };
 
