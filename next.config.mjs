@@ -4,7 +4,7 @@ const nextConfig = {
   reactStrictMode:false,
   reactCompiler: true,
   images:{
-    domains:['www.google.com', 'lh3.googleusercontent.com']
+    domains:['www.google.com', 'lh3.googleusercontent.com', 'firebasestorage.googleapis.com']
   }
 };
 
