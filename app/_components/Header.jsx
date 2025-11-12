@@ -28,7 +28,11 @@ function Header() {
         <span className='hidden sm:block'>SIGN OUT</span> <HiOutlineLogin className='sm:hidden text-[20px]'/>
 
       </button>}
-      <Image src={session?session?.user?.image:USER_IMAGE} className='rounded-full' width={45} height={40} alt='user image' ></Image>
+
+      {session?  
+       <Image src={session?session?.user?.image:USER_IMAGE} alt='user image'
+        className='rounded-full cursor-pointer' onClick={()=>router.push('/profile')}
+        width={40} height={40} />:null}
       </div>
     </div>
   )
