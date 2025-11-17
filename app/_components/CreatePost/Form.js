@@ -76,7 +76,7 @@ function Form() {
           className="w-full mb-4 border-[1px] p-2 rounded-md"
         />
         <textarea
-          name="desc"
+          name="description"
           className="w-full mb-4 
         outline-blue-400 border-[1px] 
         p-2 rounded-md"

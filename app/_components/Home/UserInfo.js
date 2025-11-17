@@ -4,7 +4,7 @@ import React from 'react'
 function UserInfo({user}) {
     console.log(user)
   return (
-    <div>
+    <div className='text-orange-500'>
          <p className='font-bold'>Posted By :</p>
    
     <div className='flex gap-2 items-center mb-3 mt-2'>
